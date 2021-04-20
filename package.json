@@ -1,0 +1,37 @@
+{
+  "name": "mydrhank-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js | pino-tee warn ./error-local.log > ./log-local.log",
+    "nodemon": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "local-production": "set NODE_ENV=production && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "pino": "^6.11.2",
+    "pino-tee": "^0.3.0",
+    "twilio": "^3.55.1",
+    "uuid": "^8.3.2"
+  }
+}
