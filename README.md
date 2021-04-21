@@ -1,13 +1,4 @@
 <!-- 
-ok so notes about the readme
-
-* 
-
-
-
-
--->
-<!-- 
 Credit to readme template author: 
 https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md 
 Thank you!
